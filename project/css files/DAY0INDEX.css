@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    
+    padding:  0 ;
+
+    box-sizing: border-box;
+}
+body{
+    background-color: #0b831569;
+    font-family: Arial, sans-serif;
+    height: 50vh;
+    margin: 10px 10px ;
+    margin-bottom: 10px;
+    
+
+}
+table{
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 20px;
+    align-items: center;
+
+    font: optional;
+    font-style: italic;
+    font-display: fallback;
+ 
+        
+}
+span{
+    background-image: radial-gradient(white,rgb(255, 0, 30));
+    background-clip: text;
+}
+
+ th, td ,tr{
+  border: 2px solid black;
+
+  text-align: center;
+  padding: 8px;
+} 
+th{
+    background-color: rgba(0, 0, 255, 0.696);
+    background-image: linear-gradient(white,rgba(0, 0, 0, 0.194));
+    bac
+}
+h1{
+    background-image: repeating-linear-gradient(rgb(235, 243, 12),rgba(232, 13, 13, 0.534),rgba(255, 166, 0, 0.648));
+    color: transparent;
+    background-clip: text;
+    
+    text-align: center;
+    
+    
+}
+u{
+    border: 3px solid rgba(255,255,255);
+    border-top: 0cap;
+    border-left: 0;
+    border-right: 0;
+}
+h3{
+    background-color: blueviolet;
+    color: transparent;
+    background-clip: text
+    ;
+}
+.cure{
+    border-top-left-radius: 20px;
+}
+.curetopright{
+    border-top-right-radius: 20px;
+}
+.curebotright{
+    border-bottom-left-radius: 20px;
+}
+.curebottleftright{
+    border-bottom-right-radius: 20px;
+}
+div{
+    padding: 20px 20px;
+    scroll-margin-left: 30px;
+}

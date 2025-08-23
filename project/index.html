@@ -3,91 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mr369</title>
-    <link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhUSEhAPDxAQEBAQDw8PDw8PDw8PFRUWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQFS0dFx0rLS0tLSstLS0tLSstLS0tLS0rLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0wLf/AABEIALcBEwMBEQACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAQIEBQYAB//EAEAQAAIBAgQDBAULAQcFAAAAAAABAgMRBAUhMQYSQVFhcYEjcpGxwRMiJDIzUnOh0fDxFEJigpKisuEHFTRDg//EABoBAAMBAQEBAAAAAAAAAAAAAAABAgMEBQb/xAAqEQEBAAIBBAECBgMBAQAAAAAAAQIRAwQSITFBBVETIzIzYXEigbE0FP/aAAwDAQACEQMRAD8A8kSNo64JOJVVYZYknAD0hqjkgB6A3IDOS6jDooRw9DMoAsUBw+IGJEFQZAofDtr2WBeN0NGIlSHVYW216ilOz7HN3sLStjyh7iGmichMp6EpwC05B4xItaSJdOmZXJW0mjHUi0ROjUsY2ba70kJ6XOfJYcZGWQERhkZHEz2io1aJUqKp8yhozfjrm5IwudU9T0+GvK6iKY7HDU83dBWw2bgBUgEh6Q4uFGC2Ay2EHQd9gE8iRh7xrkOsAdJACpADkgMaKBcEjsBpWFWoq0wTYQurE2tpNmulbvDZdujeXVAWvJa0tSVWlU2TpUqRBisXEmjuY5LSHKzsRoJVIzVBYPUmqic1ocuXtt8AxRlkUGgjnyM+xlSoFaA5UWKrHw0ZvhWGcYfPae56XBXl9RGdaO+POqajodBQDgB8UNUhwG5DByYG5CBUhgVPQF78EiwKHuwGUDPigM9IFHrYDTcCicmvGmwlv2k1tL7NckBbDuNJb3EfsSCI+Vw+mwpypFMzvlrExbXZlpdxSIbGdIWirsjJUWHQ5cmxqiY5ASKOfIxVExtIypAUqbFXj6ejN8KxzjDZ9Dc9PgrzOojLyWp6ErzLPKWdTZwAqACxVilyEkIUsRnCyQCkTAHxYHBGBkSAQ6wKOiAEiCoegM6IGnYJ9BVrxpU466eBLWzyVWV11EPBsmrDL4JEVOCwM6uHKI7TkHokVpimS2MmyRS2M8kJ2EpmGdaYRKaOfJoRoxyB0EYZGkQic+VSbUiKFVZj46G3HWebEZ9Dc9PhrzOeMnOOp6Evh5lnkZHatwAsQOJMEXGsI1qFKlsgMxvW1xJvs2wA6AHBOcFOU0AOcgM5MDFh/AHBHoBiK2n5grwl4Sdm35CrXC6qZza/ElpsNxbloBa3RMRR5bCl2rPHRkApYjJkaaHwGqDUtyMl4+0mxla0SsNEzyJYUXY58o0iXFHPk0c0YZA6mjnzCQkYVJk0SFfjoaGvHWeTF57T3PT4a8/njI1Ias9CXw8yzyaj0CI5WYFsWCHFxIiXGsdOP5BYVgcxFQ2+7XtBJOYBtznb2BfA7tGKvZPXcjuH4kkIq8e1e1B3QTkn3Fp4uFvrR9qKmU+6vxMNe0h3auk7b3Q2klvmQ1VbC2Y8KtwV7Saa1GciRSlbwEueBo4rSxFaTIfDPrfqFqsZ8pmJley7iY1zu/CImUyhyZKh6bCrxGg9SMmkSIzMLF1NwjIyOLCmjDJpE6nHQ5c6s1oxyB8InNmKMYVBjJNDxi0NME5MbnsNz0uGuDnjI1Ias9CV5tnlFPTZO5QLQkEVFwSLHFSj30LaATViaihMUSZJlFQcRLQnP0xzqulJnMwtNAnAG0y+Po4epH3Gz6Hp5+Xj/STyE1tpTZ7hHGPylNuNvrxTsrfeS6E2153WcVxnfhdfdH4dqSnOXNKUkoXScm1e4d117Y9Fbnne678NDGkno1p5mdzyny9K4zXpCzajKlH5SF3FfWi9bd/gGPJvxXNzW8ePdiqaXEdWPSL8S9uSddnPho8gxFfE/OnaFNaJpayOfm6j8OePbv6bPk553ZeItMbgXGPNFt23TM+Hre7LWTpy4+2bihqZtBf2tTvtjkvPhPkfB5kp/Vu7b2IuUjTDnxy9J2BzCFRuMXeS3RGWeMnmtMObHK6lTk2Y3lx+7buEoZjBO3Mh2bivxcfuucNi1vfQ5csp6a45rKOLjbRo57i17odTrxfVGGcGxoTXRo5c4BUYVJrJNFxS0LwKslnkNz0eGuLmjI1Ias75fDzrPKuPWcxAAkRxUFpQ6lSKxh6fuGoGYJpjCEY0VCsR8RsRyemGavZzMCAHAG4y1eih+HD3I3+H0fTft4/1ERZ3SVR05RlG0nDmunG6drvsRnth/wDdh33CzXnW1liKPNBx6STT80TXRyY92OvuzfDCtVmuqg/yaF8PL+n+M8p/C7xGY06TSm2ua9mldadvtM7jt3cvNhx6mXynxiqkGt4zg17VuRZppcZlj/Fef06Dc1BbuXL53sbW+NvAmFuXb/L1nLcLGnTjBaKMUv1Z5HNlbX1HFhMMJjPhKU4yVtGu7Uw1YvxXl3FGB+SryS+rL50fM9jp8+7B851vF+Hy3XqrLg6N4z/fQjqLrTo6CblH4RhfFVF3mXVX8uL6OfnZNxiqUVCW2zPMxyvdHqZennWW0p1cS1d2Uj1+TPt4njcUyz5bN+HobpJU7bWW54/fe7b2PWKmyavNzknK6TOrmv8Ai5+HO7vlLzrEThC8XZmXD5vlpzcmWM8EyPH1dHJ3u7D5sZS4eXLxtuMPK8UzzMpqu+lmQIh1maYwqzWdLRndwuXmZOpDVndHBZ5VFj2nGbYRHrYahoPQqLno7mQ9nsCTEg1jgMsVCAxGxPJ6YZq5nKwIAcAbzKV6Gn+HD3I3+H03ST8rH+oxmZ/bVPxZ/wC5mD57n/dy/u/9bTL5OVKDercIN+xDr3+G3Lixt+0UWQL6TVXdU/3oJ6ed0f7+f+/+k4sWtP1ZfAkvqPvH/az4brN0YLsbXlcnKOno8t8UVmTUE8dbpGpUl7Lk53/Bx8GO+p/q1peMcxlRo8sXaVR2ut1HqcvFxzLLd+HoddzXj49T3WZ4UzSdOsouTcJuzTbevab8/HMsfTzui58seSS3xVpx9RvyT8UzLpLrcdP1PHcmQfAy0qfvoHV/BfTvWQvB6+mVDPq/2ofR/v5IfE2bVoV5wjO0ew06fhwywlsY9Vz548lkvhO4Ip35qj3u3cy6z4xjboJuXKlzjieUZuC21Q8Oi8S0c/WXHLtVOT5xNVu6TNebgnY5uHqL3/2ts/zWXNGPazn4OGatdPUc13I0WQYFzUWttzl5cpNu7p+Lukrc0Y2SXYjzcvNdtLJEHELExNMCrN5utGd3E5eVmKkNWdkrisUCZ7jgcIOGEmitC41x9G1IisKwyaAqaxwOqRsaa0rKaRMRsZZ+nLmrmczAgBwBv8p+xp/hw9x0fEfVdH+zj/UZbF5ZWqYiajTlaVST5nFqKTe92YaeFydNyZ82UmPu3/rX06ShBRW0IqK8ErBXt9nZhMfszHDcr4mb+9Go/bJBHkdDd8+V+8v/AFL4lwNSo6fJByspJ2tZXtYnbbruHPO49s37WGV4X5GEU91q+y71ZFu3Rw8f4eExVnCklLFzl67XnIXJ+hxdH558shv+oNT0lOPRQb9rM+mniq+p3/LGMzgpWqQfZOPvOjL087jus42vGcb4eL70cXB4zex183xbQ+BXpU/fQfV/DL6b6yG4O/8ANqGXV/sw+j/9GSbn/Cvyk5Vea2l7GXB1fbjMWvUdFM8rlt3DNDkpSXZc05L38sPpce3Cxjs7+0fiz1s5rTy+p/WFlX2sfE5+b9FZ8P64teI5WnF9ljn6eeK6uquso2fCWZWUVfQ8/qOPy9TpOXxpvqUrq55mUd9dIg4iYhF4is9msdzt4q5uWM3UhqdkcdjLnuvNKkAEpxKipBqckiouU2tuKlkEBEY4CS1/QsXyiV9jPP058lezmYEAOAN9lX2FP8OPuOieo+s6D9nH+olXM8l6m0HO8WqdKTvq1yx9Z/u/kQ4+s5Zhx2/Kg4S+3f4cvehPL+nfu/6a2pH2oyezlFPn+NVODSfzpXUe3vZeMcPV83Zj/NQeCH6d+o/eiOX9Ll+n/ronHn20fw/iTwTwf1L9c/pnsKrzj68febX04cP1T+264y0wy8YnDweeR7XXeOFXcCvSp++hXV/Dn+m+shuD39NqGXV/sw+k/wDRk0+c5xRgpQckpWehxcPDllq6d/Lz4Y7lqoyCqpU5NdbnZlO3kxYdPlvC1jM7+0fiz18/h5XU/rAyx+lj4nPy/orPh/XFnxM9UYdM6OrE4dzJxai+jQuo4vk+l5tXT2TJq3NTT7j5/mx1k+jxu8ZU9owNHrrQePs2czRbndxOfkZ+cdTrlctZG59A8oqYGImNQlMqKhtVipZBoCI0OA6UTXSrPCHiNjLk9OXNWs5WBADgDeZO/QU/Uib/ABH0/RZflY/0rMx4gdOpKCpp8kmr87177WMrk4eo+oXDkyxmPr+VBj8fUrSvN7fVitIx8CXmc3Pny3eSw4Sfp/8A5y+AOn6dfzv9NFi8Zy1acXtU51/iVrfEnT0uTl7eTGX52rOJsPzQ50tYP/S9wjk63Duw7vsgcI1eXEx/vRkvj8CeT9Ll6LLXKtePKF/k6njFmXBfNjp+o4+JkoMhoOdeC/vXfgjbkusa4emw7uWRqeO6tqUI9svccnTT/J6f1HL8uRB4J2qfvoV1Xwx+n+qNwk/pszPq/wBmH0n/AKMlXxjf+pkbdJ+3HN1v7tXHBNS8JR8TDq/GUrr6DLeOlTnmW1HVdou127nXj1OOWMc3U8OVz8RWYSm41Yp7pjzu8K58J25yLLP43lFdpjwXUro6mbsPwGVtSUvAnk5tzR8fDZdvXeH1amvBHh8/t9Dxz/CLVnKoOrsOGzmarc7eJhyKKUdTqjl0xSR9C8k5DMWDGqOuA2SbAU1DI6ml1KxVDqqNVVBxSMuT05eRWM5HOQA4A2+Ty9DT9RG/xH0HS5a4sf6ZXOn6ep67Mb7eN1V3zZf2hCYLfhd2r/4JfAcdvQ3XL/pO4oqNfJSW6lJrx0E367LXbZ8Va4dxqw7pw96Iy8OrGzkw/ixksO3Qrq//AK6iv4X/AEHfMePjvi5fPxXoWKwsK9PklrGSTT7Oxo4rlcbt7mWGPLj230i5NkNPDtyTcpPS76IWfNc/CODpceG791WZ1JVsTGk9Yxi7+Jrxztx25+os5OaYfZZ5Zl0aEJW1vd3MOTO55Onh4ZxY3Sl4VqfTJvvZp1U/Kji6S/n1rcwy2lO8nFOVnqcGHJlPEelnxYZebGMybEqliJR2i2ehzYd/HK8vgz7OWz4bOfLJXsndHnTcr1LqsHj8PJYi6i7X7D1cL+W8fkxv4vpYYzL6lSUXGN7WMuPKSWN+TiyyssaDLctqPlTjaxycmUjs4uHK6bzA0uSKR53J5r1JNTSVcwpBVXoENQ5n1Ovic/IpGjqc+mH6H0byHIAc0MHRA3SQAgwdD4lYnBZx1v3G0aq7FdTLkcnIq2cbmIAcAbHKJ+ih6qN56ez0+X5cZrN/tp+t8DG+3mdR+7khiYrThx+mXqyHHV0d/M/0ncUr5sPWl7kFdHXfpg/Cle8JQ6w1Xqv/AJIzV0Oe8bPsg8TYe01NL6ys/FBiw63D/KZT5X3CmaKcFTk7Thor/wBqPQ5efDXn4dfR8/dj233FxmOMjSg5Pe2i6tnPx43K6js5eSYY7rGZPiX/AFDnNP573a2O/PD/AB1HkcGd/F7svlr8VJuDUd2rI5ePityernd46inyPJp0qjqN3udfJw/iY6cvT9PePLu2v51pPSzOX/45L7ddyt8IEeHIOXPs9zoniaZzo5b3fK9y7AdHsjmz4sd7dOHHrwkYrJ6bd+VX7R92ppWXBjfhYZfl8Ir6qOXkrbj45IsI0orZJHJnWohz5A8ypBV3oEKqLMOp1cbHNUNHSwYVqyPpXjEWoAsgB8IgcJNgKQYOhv5ocOex5W269nU1mTTaFiokcl25uSK2ph30OSxz3Gh/08/uy9gao7b9nf01T7k/8rDtv2HZl9mky+fLTino1GzT0aZtJ4ejxZawm1fi8EpzlK9rvczuO3Nycfdnad/2LS/O/wDKP8M//m/lMyjJ+Wo5Kd+Vfd3v5ik024eDty3KsMTgVWspK6i3y208S5hPdbcmP4mpfgbL8np053imny2erIzwh8XDjhl4WKwkHduKlp1VxYY6dHZLNhYjBQUU1FJ9qVmVlNoy45JtHjQu9fneOpOOMnwUx2K8NH7q9hodxidhaCJsjXDEdQ1E1kGhRW5Fq5gkU4mWTWRYYemY2nIlchhlVaFpmGShTmyhlRz5QHGNIKvsPEqpMf1OnBjmq+U6GLAzPpq8WkW4iOkhmetAUaBOADwfX8i4uDva/b16lbUiSgRWVhiomek9o9OFtSpGmOOiuI1HxjcY0eqdiRoW+lt79g1LDCQcF3tq6Fpth4SsPv3a6AvH2lRXuJrWOnL5tl1F8i3x4JWinFIn5OzeOgI0bDRMdFsM0ulohNMfEEpq4qvHymqFkY5V0SeCIihY4eehjlFJbMMjLAxyAsTnyM5GGQcYUBV2GJVS446sGOavsbMnnZ9M8M4YNEBIvQanWsAPjuOASy7f0LUfog2o23X2EEfCIHI6QB0EAgsI23A4XdeIjTsDhVdN9V7AaYY+UhRtK3S/5DV6qRSer7BVePsaSaXixLp0YPboTTkqRUpaIhrZ4BnEqJqO0NmlwXzRNZ6Gw8dScl4e02psZV0UyKJpROwsTLJSUYZGLFGGRnxMMoZyOfIFMcgDXFiVU+NR04Mc0FRNWbzi2h9O8EoGdGI9Ho+Wg6ZoiPgv5GcPl00v0GoWGt/3YFRz/nvACJK3W+gjMfvYipy00/gAVN36d3cgNIoW7r9Bqi2g9E7d3gJvKWtDv8QgyFVK8fmvv8RK148JNtF5CafA3Lv4EtHJ6INDfhHrSGzyoKaYFKkU5aWBcvgehuTV4JNyK22Wm9TOnKsaEjHKNakJGNIWCMchDjDJRyOfKBxjlADX2JhVUYs6MGOSJFGqHmqPp3gFQzEgxqjpMQIAF9nmMxVDy06PtKPToaL9ewIcPjr+QjLf+PAQI3uktVa/TcQJzAD3a3jqMx4pLbq9fMDWtO23ikJvD623h7wOpdL6q7WS0no6F9hKn2HbsT7XvRW00n2hFW7Q8Vv4Fxjn7BggTBqQKiVSepFa43yOyWh0DOqiZQkZZNN+E6mzDISjQMclFZjlAfEwyhubMMoYFYmQqqsWjfFjkixWhrpDzOKPpngFQA+LGqElLUBt1wAq18hmO3orFqEhS0u7gqQiVr7ePaSRr7OnjfQQI2AJFAILGGl/3YRjUH/wNUT6NTXu7xNJUuo1bV9AXaLgprlXcKrwvhIi9bivpcvkSq7+wUisrsOFXZdgaKZBYrVjic/NCTBMFpvQFSpFMmriXFaEVvCIimlUzPJpEulMwyhbTKbMcouOkzHKA6LMcobkY5Q9h1iJCqrxRtjGWSPCOhtpk8vR9G8IqAHDM1biB/KMxIrq/wBscMRP29F8R7NJqTst/wBB2q2E5+XmSRJAHJAZ8UIHQYHDot37gESqc979PeEi9n06sm3fZfV8O8Zy1JwtS9+i6iVjUiWKS0WqXUNL73VMW3tsGhc3UautwEyHUubUS97NjG4gdGIGk0ya0iXGWhFaykuTT2PBmeTSVIpsxyK+06lsY5RUOkzGxWz0ZZQbcY2GDVJkK1XYk2xjHKgw2NdMtvLLH0DxTrDBwGYIj4DVBaa1HDF0Tv1sUZXr5d4vYNqJO8de8KPboiM9CBt9Uu24ASXf0AzkhmJG4GNTbsBiQ2Az4sDEiIxYoFROg0oiaS6gSkBbPpsFSpEGRVyjJiq9iRIqpR4MzrSVIoyMsodTqctDKxUrpMxsGz6UjPKHKLIxsPYFQWk2q/Eo2xjHOhU1oa6ZbeWHuPILcAUDNsIj4TT6dw5TgnN3LYZnJ/oBj0o/NbZUOAxlZ+JIP0AF/jyAyX18gB6QA9MFHJgBoMDctwNJo02wMeFHtBQ6SXsBRzEZUBw6AHBokVUqRBk1pKeiarY0GZ1cotOWpnVbTqcjKiUR7GVh7dSkRYJUm5jYvYdRCkTagYlG2Mc+dDprQ10z2//Z" type="image/x-icon">
-
+    <title>Web developer</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQOxDfO4qUx41Cda-UkJITyrtH3P6YdVI3Qg&s" type="image/x-icon">
+    <link rel="stylesheet" href="../project/css files/project1css.css">
 </head>
 <body>
-    <pre><h1>                                        <u>Welcome to html daily projects</u> </h1></pre><br>
-    
-    <table border="2" height="300" width="1400">
-        <caption><h3>List of projects</h3></caption>
-        <tr>
-            <th>S.no</th>
-            <th>Date</th>
-            <th>Topic</th>
-            <th> Project Topic</th>
-            <th colspan="2">Project Link</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>04-08-2025</td>
-            <td>Headings</td>
-            <td> web site on sample heading </td>
-            <td><a href="day.html" >project-on-headings</a></td>
-            <td rowspan="7">----------💀 sorry expired 💀</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>05-08-2025</td>
-            <td>formating tags</td>
-            <td> web site on formating tags </td>
-            <td><a href="day.html" >project-on-formating tags</a></td>
-            
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>06-08-2025</td>
-            <td>list</td>
-            <td> srh web site  </td>
-            <td><a href="day.html" >project-on-list</a></td>
-            
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>07-08-2025</td>
-            <td>tables</td>
-            <td> web site on daily rotine </td>
-            <td><a href="day4.html" >project-on-tables</a></td>
-        </tr>
-        <tr>  
-            <td>5</td>
-            <td>08-08-2025</td>
-            <td>Videos and pics</td>
-            <td> web site on videos & pics </td>
-            <td><a href="day.html" >project-on-video and Revision</a></td>
-            
-        </tr>
-        <tr>  
-            <td>6</td>
-            <td>09-08-2025</td>
-            <td>Videos and pics</td>
-            <td> web site on videos & pics </td>
-            <td><a href="day.html" >project-on-video and Revision</a></td>
-            
-        </tr>
-         <tr>  
-            <td>7</td>
-            <td>11-08-2025</td>
-            <td>project</td>
-            <td> web site on html </td>
-            <td><a href="day.html" >project</a></td>
-            
-        </tr>
-         <tr>  
-            <td>7</td>
-            <td>11-08-2025</td>
-            <td>forms</td>
-            <td> Aparichithudu Boys Website </td>
-            <td><a href="day8.html" >take revange on cheating girls</a></td>
-            <td>----------👍Click on project to open👍</td>
-        </tr>
-     </table>
-   
-
+    <div class="header">
+    <img class="img" src="https://thaka.bing.com/th?q=HTML+Icon.png&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="img1">
+    <h1 class="text">Web Developer</h1>
+    <img class="img" src="data:image/png;base64,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" alt="img2">
+</div>
 
     
+    <img class="image1html" src="./web.jpeg" alt="Web Developer Icon" style="width:500px;height:500px;">
+    <h1>Web developer</h1>
+    <div id="para1">
+    <p class="paara2">A web developer is a programmer who specializes in the development of applications and features for the World Wide Web. They are responsible for designing, coding, and maintaining websites and web applications to ensure they are functional, user-friendly, and visually appealing.</p>
+    </div>
+    <div class="roles">
+    <div class="roles1">
+    <h2>Key Responsibilities:</h2>
+    <ul>
+        <li>Designing and developing web applications using programming languages such as HTML, CSS, JavaScript, and various frameworks.</li>
+        <li>Collaborating with designers, content creators, and other developers to create a seamless user experience.</li>
+        <li>Ensuring the website is responsive and works well on different devices and browsers.</li>
+        <li>Optimizing web applications for speed and performance.</li>
+        <li>Implementing security measures to protect against cyber threats.</li>
+        <li>Maintaining and updating existing websites to improve functionality and user experience.</li>
+    </ul>
+    </div>
+    <div class="roles1">
+    <h2>Skills Required:</h2>
+    <ul >
+        <li>Proficiency in front-end technologies like HTML, CSS, JavaScript, and frameworks such as React or Angular.</li>
+        <li>Knowledge of back-end technologies like Node.js, Python, Ruby, or PHP.</li>
+        <li>Experience with databases such as MySQL, MongoDB, or PostgreSQL.</li>
+        <li>Understanding of version control systems like Git.</li>
+        <li>Strong problem-solving skills and attention to detail.</li>
+        <li>Good communication skills for collaborating with team members and clients.</li>
+    </ul>
+    </div>
+    </div>
+    <div class="roles3">
+    <h2>Career Opportunities:</h2>
+    <p>Web developers can work in various industries including technology companies, digital agencies, e-commerce businesses, and more. They can also choose to work as freelancers or start their own web development firms. With the increasing reliance on digital platforms, the demand for skilled web developers continues to grow.</p>
+    </div>
+    <h2><u><span class="htmll">HTML</span>(HyperText Markup Language)</u></h2>
+    <h3 class="hedd">Learn HTML With real time Projects</h3>
+    <img class="image1" src="./htmltitleimage.jpeg" alt="HTML Icon" style="width:500px;height:500px;">
+    <div class="paara2">
+    <h2 >What is HTML?</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML stands for HyperText Markup Language. It is the standard markup language used to create web pages. HTML describes the structure of a webpage using a series of elements and tags.</p>
+    </div>
+     <h3>Html Basics</h3>
+    <div >
+        <div class="htmlintro">
+
+        <div class="htmlintro1">
+            
+       
+         
+            <a href="https://www.w3schools.com/html/html_headings.asp" alt=""> Html Basics</a><br>
+            <a href="https://www.w3schools.com/html/html_attributes.asp" alt=""> html attributes</a><br>
+            <a href="https://www.w3schools.com/html/html_formatting.asp" alt=""> html formatting tags</a><br>
+            <a href="https://www.w3schools.com/html/html_headings.asp" alt=""> html headings</a><br>
+
+
+        </div>
+
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.Xy1bxCwVDIEWch6AQLJ-TAHaFV?w=252&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            <h2>Let's solve a project</h2>
+            <a href="day1.html" >project-on-headings</a>
+             <a href="day1.html" >project-on-formating tags</a>
+            
+        </div>
+
+        </div>
+         
+        <h3>List of topics in images,list, table</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+        
+        
+            <h2>Let's solve a project</h2>
+           
+            <a href="day1.html" >project-on-list</a>
+            <a href="day4.html" >project-on-table</a>
+
+             
+        </div>
+        
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.l-odLCMqZ8Ky8Gl0c7zTZwHaEK?w=283&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/html/html_images.asp" > Html image map</a><br>
+            <a href="https://www.w3schools.com/html/html_lists.asp" > Ordered list </a><br>
+            <a href="https://www.w3schools.com/html/html_lists.asp" > UnOrdered list</a><br>
+            <a href="https://www.w3schools.com/html/html_tables.asp" > Table</a><br>
+
+            
+
+        </div>
+        </div>
+        <br>
+        <h3>Project</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+           Headings<br>
+            Formatting tags<br>
+            Images<br>
+             Lists<br>
+            Tables<br>
+            Links<br>
+
+            
+
+             
+        </div>
+        
+        <div class="htmlintro1">
+            <p>Let's solve the project</p>
+            <p>Make a simple webpage using the above topics</p>
+            <p>Use the following tags in your project</p>
+            
+        </div>
+        <div >
+           <img src="https://thumbs.dreamstime.com/z/creative-process-innovative-idea-project-thinking-tiny-person-concept-research-new-work-planning-brainstorming-solution-235207467.jpg" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+
+        </div>
+        <h3>List of topics in Block and Inline elements</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/html/html_blocks.asp" > Block  and Inline elements</a><br>
+            <a href="https://www.w3schools.com/html/html_div.asp" > div tag</a><br>
+            <a href="https://www.w3schools.com/html/html_span.asp" > span tag </a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.7m1Zk0HHNKiOuWRbpWGougHaEU?w=264&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            <h2>Let's solve a project</h2>
+            <a href="day6.html" >project-on-iframe</a>
+        </div>
+        </div>
+        <br>
+        <h3>List of topics in Semantic tags</h3>
+        
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" > Semantic tags</a><br>
+            <a href="https://www.w3schools.com/html/html5_new_elements.asp" > New elements</a><br>
+            <a href="https://www.w3schools.com/html/html5_browsers.asp" > Browser support </a><br>
+
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.ME0hS52Ae5RwRwjS481W8QHaEK?w=285&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+             <h2>Let's solve a project</h2>
+            <a href="day7.html" >project</a>
+        </div>
+        </div>
+        <h3>List of topics in media and Iframes</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/html/html_media.asp" > Media</a><br>
+            <a href="https://www.w3schools.com/html/html_iframe.asp" > Iframes</a><br>
+            <a href="https://www.w3schools.com/html/html_media.asp" > Audio tag </a><br>
+            <a href="https://www.w3schools.com/html/html_media.asp" > Video tag</a><br>
+            <a href="https://www.w3schools.com/html/html_iframe.asp" > Iframe attributes</a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.v-g-B1ZXG49Y4REZlSxHbwHaDt?w=321&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+             <h2>Let's solve a project</h2>
+            <a href="day6.html" >project-on-iframe</a>
+        </div>
+        </div>
+        <br>
+        <h3>Project</h3>
+         <div class="htmlintro">
+        <div class="htmlintro1">
+            <p>Let's solve the project</p>
+            <p>Make a simple webpage using the above topics</p>
+            <p>Use the following tags in your project</p>
+            Semantic tags
+            Media
+            Iframes
+        </div>
+        
+        <div class="htmlintro1">
+            Headings<br>
+            Formatting tags<br>
+            Images<br>
+            Lists<br>
+            Tables<br>
+            Semantic tags<br>
+            Media<br>
+            Iframes<br>
+
+        </div>
+        <div >
+           <img src="https://thumbs.dreamstime.com/z/creative-process-innovative-idea-project-thinking-tiny-person-concept-research-new-work-planning-brainstorming-solution-235207467.jpg" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        </div>
+        <br>
+
+
+        
+        <h3>List of topics in Forms and Input tags</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/html/html_forms.asp" > Forms</a><br>
+            <a href="https://www.w3schools.com/html/html_form_input_types.asp" > Input tags</a><br>
+            <a href="https://www.w3schools.com/html/html_form_attributes.asp" > Form attributes </a><br>
+            <a href="https://www.w3schools.com/html/html_form_elements.asp" > Form elements</a><br>
+        </div>
+        <div >
+           <img src="https://tse1.mm.bing.net/th/id/OIP.VZKiZzb_faXkuw9PzsW3bgHaEr?rs=1&pid=ImgDetMain&o=7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+             <h2>Let's solve a project</h2>
+            <a href="day8.html" >take revange on cheating girls</a>
+        </div>
+        </div>
+        <h3>List of topics in Forms and Forms validation</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/html/html_form_validation.asp" > Form validation</a><br>
+            <a href="https://www.w3schools.com/js/js_validation.asp" > JavaScript validation</a><br>
+            <a href="https://www.w3schools.com/js/js_popup.asp" > Popup boxes </a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.8IpkGCB0OMPoxBQ1mhuamwHaD4?w=342&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+             <h2>Let's solve a project</h2>
+            <a href="day8.html" >take revange on cheating girls</a>
+        </div>
+        </div>
+        <h3>Project</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <p>Let's solve the project</p>
+            <p>Make a simple webpage using the above topics</p>
+            <p>Use the following tags in your project</p>
+        </div>
+        <div class="htmlintro1">
+            Headings<br>
+            Formatting tags<br>
+            Images<br>
+            Lists<br>
+            Tables<br>
+            Semantic tags<br>
+            Media<br>
+            Iframes<br>
+            Forms<br>
+            Form validation<br>
+        </div>
+        <div >
+           <img src="https://thumbs.dreamstime.com/z/creative-process-innovative-idea-project-thinking-tiny-person-concept-research-new-work-planning-brainstorming-solution-235207467.jpg" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        </div>
+        <h3>Video tutorial for HTML</h3>
+          <div >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kUMe1FH4CHE?si=Ymp0t5Cb0Hx8Ty-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <hr>
+        <hr>
+        <h2><u>CSS(Cascading Style Sheets)</u>
+        </h2>
+        <div class="paara2">
+    <h2 >What is CSS?</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS, which stands for Cascading Style Sheets is a language in web development that enhances the presentation of HTML elements. By applying styles like color, layout, and spacing, CSS makes web pages visually appealing and responsive to various screen sizes.</p>
+    </div>
+        <img  class="image1" src="data:image/webp;base64,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" alt="CSS Icon" style="width:500px;height:500px;"/>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/css/css_intro.asp" > Css Introduction</a><br>
+            <a href="https://www.w3schools.com/css/css_syntax.asp" > Css Syntax</a><br>
+            <a href="https://www.w3schools.com/css/css_selectors.asp" > Css Selectors </a><br>
+            <a href="https://www.w3schools.com/css/css_howto.asp" > Css How to </a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.D8mMlUITPXIydak15aMwyAHaEK?w=300&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            S.no
+            Date
+            Topic
+            Project Link
+        </div>
+        </div>
+        <h3>List of topics in Css Box model and Css units</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/css/css_boxmodel.asp" > Css Box model</a><br>
+            <a href="https://www.w3schools.com/css/css_units.asp" > Css Units</a><br>
+            <a href="https://www.w3schools.com/css/css_margin.asp" > Css Margin </a><br>
+            <a href="https://www.w3schools.com/css/css_padding.asp" > Css Padding </a><br>
+            <a href="https://www.w3schools.com/css/css_border.asp" > Css Border </a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.DfAgsrcmHRA7kqA_eLcFIwHaEK?w=288&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            S.no
+            Date
+            Topic
+            Project Link
+        </div>
+        </div>
+        <h3>List of topics in Css Text and Css Fonts</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/css/css_text.asp" > Css Text</a><br>
+            <a href="https://www.w3schools.com/css/css_font.asp" > Css Fonts</a><br>
+            <a href="https://www.w3schools.com/css/css_links.asp" > Css Links </a><br>
+            <a href="https://www.w3schools.com/css/css_lists.asp" > Css Lists </a><br>
+            <a href="https://www.w3schools.com/css/css_tables.asp" > Css Tables </a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.os9o_Q_e1FlPBFJlO4YPJwHaEK?w=309&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            S.no
+            Date
+            Topic
+            Project Link
+        </div>
+        </div>
+        <h3>List of topics in Css Backgrounds and Css Gradients</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <a href="https://www.w3schools.com/css/css_background.asp" > Css Backgrounds</a><br>
+            <a href="https://www.w3schools.com/css/css_gradient.asp" > Css Gradients</a><br>
+            <a href="https://www.w3schools.com/css/css_image_gallery.asp" > Css Image gallery </a><br>
+            <a href="https://www.w3schools.com/css/css_image_transparency.asp" > Css Image transparency </a><br>
+            <a href="https://www.w3schools.com/css/css_image_replace.asp" > Css Image replace </a><br>
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.tbYA79_spCwQZ_eAwa91TQHaEI?w=289&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        <div class="htmlintro1">
+            S.no
+            Date
+            Topic
+            Project Link
+        </div>
+        </div>
+        <h3>Project</h3>
+        <div class="htmlintro">
+        <div class="htmlintro1">
+            <p>Let's solve the project</p>
+            <p>Make a simple webpage using the above topics</p>
+            <p>Use the following tags in your project</p>
+        
+
     
+        </div>
+        <div class="htmlintro1">
+            
+            Html with Css<br>
+            Css Syntax<br>
+            Css Selectors<br>
+            Css Box model<br>
+            Css Units<br>
+            Css Text<br>
+            Css Fonts<br>
+            Css Backgrounds<br>
+            Css Gradients<br>
+
+        </div>
+        <div >
+           <img src="https://th.bing.com/th/id/OIP.v-g-B1ZXG49Y4REZlSxHbwHaDt?w=321&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="HTML Basics Icon" style="width:300px;height:300px;">
+        </div>
+        </div>
+        <h3>Video tutorial for Css</h3>
+        <div>
+            <iframe   width="560" height="315" src="https://www.youtube.com/embed/1Rs2ND1ryYc?si=3YkX1eXJH5jH1i0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br>
+
+
+    </div>
 </body>
-
 </html>
