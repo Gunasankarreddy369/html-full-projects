@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(8, 8, 8, 0.943);
+    background-color: blueviolet;
     color: #373737;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .openpageee{
     
-    border: 5px solid rgba(14, 13, 13, 0.155);
+    border: 5px solid rgba(222, 21, 228, 0.155);
     position: fixed;
     border-radius: 10px;
     width: 400px;

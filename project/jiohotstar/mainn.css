@@ -1,0 +1,277 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}body{
+    background-image: linear-gradient(white,lightgrey);
+    opacity: 1.5;
+    z-index: -1;
+    background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+    width:100%;
+    
+}
+.head111{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+   
+    
+    background-color: rgb(240, 240, 240);
+}
+.skills-container
+{
+    display: grid;
+    margin: 30px 250px;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    
+}
+.imgskills img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 20%;
+    box-shadow: 3px 3px 30px blueviolet;
+    animation: fromLeft 2s ease;
+
+}
+.imgskills img:hover{
+    background-color: aqua;
+    transform: scale(1.2);
+
+}
+
+.headerimage{
+    background-image: linear-gradient(to right,rgba(255, 140, 0, 0.888),rgba(119, 255, 0, 0.989),rgb(0, 255, 38));
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    
+   
+
+}
+.header1{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    
+    color: black;
+    font-size: 20px;
+    font-weight: bold ;
+    margin-left: 200px;
+    
+    
+}
+.heading-Education{
+    display: flex;
+    
+    justify-content: center;
+    padding: 30px;
+    margin: 20px 60px 30px 60px;
+    border: 2px solid black;
+    gap: 40px;
+    border-radius: 20px;
+    margin: 20px 200px;
+   
+}
+.educationheadings{
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.headddd{
+    color: black;
+    font-size: 15px;
+    
+    font-weight: bold ;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    
+}
+
+
+.less{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold ;
+    padding-right: 20px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    
+    
+}
+.navbar{
+    margin-right: 30px;
+    width:50%;
+}
+.navabar{
+    color: black;
+    font-size: 15px;
+    font-weight: bold ;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20%;
+    background: linear-gradient(45deg,orange,yellow,blue,violet);
+    background-size: 400% 400%;
+    animation: forexper 10s ease-in infinite;
+    
+}
+.navul:hover{
+   
+    transform: scale(1.2);
+
+}
+.social{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+    
+}
+img{
+    width: 20px;
+    height: 20px;
+    
+}
+#linkedin11{
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    
+}
+.mainleftside{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 50px;
+    
+}
+.line1{
+    border: 8px solid rgb(0, 0, 0);
+    width: 200px;
+    
+    height: 5px;
+    border-radius: 20px;
+    
+}
+.bodypage1{
+    display: flex;
+    
+    padding-top: 30px;
+    padding-left: 100px;
+     padding-right: 100px;
+      padding-bottom: 100px;
+    
+}
+.namehead{
+  
+   font-size: 35px;
+   padding-top:30px ;
+   padding-bottom: 30px;
+}
+.linedis{
+    padding-top: 10px;
+    font-size: 20px;
+    
+}
+.rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 80px;
+    width: 50%;
+}
+.aboutme{
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+#mainimage{
+    width: 350px;
+    height: 350px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    border-radius: 30%;
+    box-shadow: 3px 3px 30px blueviolet;
+    animation: fromLeft 2s ease;
+}
+.social{
+    padding-left: 50px;
+}
+.skills1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 50px;
+   border: 2px solid black;
+}
+.heading-skills{
+    text-align: center;
+}
+
+.heading-Experience{
+    display: flex;
+    
+    justify-content: center;
+    padding: 30px;
+    border: 2px solid black;
+    gap: 20px;
+    border-radius: 20px;
+    margin: 20px 60px 30px 60px;
+    background: linear-gradient(gray,green,orange);
+    animation: forexper 8s ease infinite;
+    
+  
+}
+.experienceheading{
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    
+}
+.experienceheading:hover{
+    background-color: aqua;
+    transform: scale(1.2);
+
+}
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes forexper{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

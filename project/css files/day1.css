@@ -1,3 +1,77 @@
-table{
-   color: black;
+.nav-bar{
+    display: flex;
+
+    background-color: aqua;
+   
+    flex-direction: row;
+    justify-content: space-around;
+   justify-content: middle;
+   padding: 20px;
+
+ 
+
+}
+ul{
+   
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    font-size: 15px;
+    
+    
+    
+}
+
+a{
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    
+    
+   
+   
+
+}
+a:hover{
+   background-image: linear-gradient(yellow,white);
+}
+.yesss{
+   border: 2px solid black;
+   border-radius: 20px;
+   padding: 10px;
+
+   position: relative;
+
+   left: 350px;
+
+   bottom: 10px;
+   
+}
+.Nooo{
+   position: absolute;
+   right: 5px;
+   padding-right: 50px;
+   
+   
+}
+
+button{
+
+    position: sticky;
+
+    left: 400px;
+
+    bottom: 10px;
+}
+.fixedq{
+    background-color: black;
+    position:absolute;
+   right: 10px;
+    
+   
+    width:200px;
+    height: 200px;
 }

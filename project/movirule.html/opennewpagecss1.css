@@ -5,10 +5,12 @@
     
 }
 body{
-    background-color: rgba(0, 0, 0, 0.888);
+    background-color: blueviolet;
     border-top: 5px solid yellow;
     padding-top: 10px;
     padding-left: 20px;
+
+
 }
 .headerr{
     position: fixed;
@@ -93,7 +95,7 @@ body{
 }
 a{
     width:20px;
-    color: yellow;
+    
      gap: 20px;
      text-align: center;
     
@@ -135,17 +137,7 @@ iframe{
     display: inline;
 
 }
-ol{
-    
-    
-    border:1px solid yellow;
-    border-radius: 10px;
-    width: 150px;
-    color: yellow;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.543),black);
-    
 
-}
 .hhhhhhhhhh{
    
     padding-top: 90px;
@@ -165,3 +157,24 @@ ol{
     border: 2px solid yellow;
     
 }
+.nav-bar{
+    display: flex;
+
+    background-color: aqua;
+   
+    text-decoration: none;
+    justify-content: center;
+    
+   
+    
+
+}
+
+
+
+a,ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
