@@ -21,6 +21,27 @@
     
     background-color: rgb(240, 240, 240);
 }
+.btnresume{
+    background: linear-gradient(45deg,orange,yellow,blue,violet);
+    background-size: 400% 400%;
+    animation: forexper 10s ease-in infinite;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 80px;
+    font-size: 20px;
+    
+    font-weight: bold ;
+    
+}
+.btnresume a{
+    text-decoration: none;
+    color: orange;
+}
+.btnresume:hover{
+   
+    transform: scale(1.3);
+}
 .skills-container
 {
     display: grid;
@@ -81,6 +102,13 @@
     margin: 20px 200px;
    
 }
+.contact-me{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding-top: 20px;
+    
+}
 .educationheadings{
     border: 1px solid black;
     font-family: 'Times New Roman', Times, serif;
@@ -129,7 +157,7 @@ a{
     padding: 5px;
     border: 1px solid black;
     border-radius: 20%;
-    background: linear-gradient(45deg,orange,yellow,blue,violet);
+    background: linear-gradient(45deg,orange,yellow,violet);
     background-size: 400% 400%;
     animation: forexper 10s ease-in infinite;
     
@@ -231,31 +259,187 @@ img{
 
 .heading-Experience{
     display: flex;
-    
+    margin: 20px 30px 30px 60px;
     justify-content: center;
     padding: 30px;
     border: 2px solid black;
     gap: 20px;
+    height: 110vh;
     border-radius: 20px;
-    margin: 20px 60px 30px 60px;
-    background: linear-gradient(gray,green,orange);
+    margin: 20px 160px 30px 200px;
+    background: linear-gradient(gray);
     animation: forexper 8s ease infinite;
     
   
 }
 .experienceheading{
     display: flex;
-    padding: 20px;
+    flex-direction: column;
+    
     border-radius: 20px;
     border: 2px solid black;
     background-color: aliceblue;
     
+    
 }
-.experienceheading:hover{
-    background-color: aqua;
-    transform: scale(1.2);
+.experienceheading img{
+    width: 100%;
+    height: 50%;
+    image-resolution: from-image;
+    border-radius: 18px 18px 0px 0px;
+    border: 2px solid black;
+    
+    
+}
+.experienceheading ul{
+    list-style: none;
+    padding-left: 20px;
+    font-size: 18px;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 10px;
 
 }
+.experienceheading h3{
+    text-align: center;
+    font-weight: bold ;
+    padding: 30px;
+    color: blue;
+}
+.experienceheading p{
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold ;
+}
+.heading-Education{
+    display: flex;
+    
+    justify-content: space-around;
+    padding: 30px;
+    margin: 20px 160px 30px 160px;
+    border: 2px solid black;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: gray;
+}
+.line2{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 30px blueviolet;
+}
+.line3{
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 30px blueviolet;
+}
+.line2 a,.line3 a{
+    color: white;
+    font-size: 30px;
+}
+.line2,.line3:hover{
+    transform: scale(1.2);
+   
+}
+.educationheadings {
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.heading-Projects{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 20px 200px 30px 200px;
+    border: 2px solid black;
+   
+    border-radius: 20px;
+}
+.projectsheading{
+    border: 2px solid black;
+   
+    border-radius: 20px;
+    background-color: aliceblue;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 3px 30px blueviolet;
+    
+}
+.projectsheading img{
+    width: 100%;
+    height: 50%;
+    border-radius: 18px 18px 0px 0px;
+    
+}
+.projectsheading h2{
+    text-align: center;
+    font-weight: bold ;
+    padding: 20px;
+    color: blue;
+}
+.projectsheading p{
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+    
+}
+.heading-Awards{
+    display: flex;
+    justify-content: center;
+    
+   
+    
+}
+.heading-Certificates{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px 200px 30px 200px;
+    border: 2px solid black;
+   
+    border-radius: 20px;
+}
+.awardsheading{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-weight: bold ;
+    box-shadow: 3px 3px 30px blueviolet;
+}
+
+.educationheadings :hover{
+    background-image: linear-gradient(rgba(56, 96, 104, 0.699),blueviolet);
+    background-clip: text;
+   color: transparent;
+    
+    transform: scale(1.1);
+}
+
 @keyframes fromLeft {
     0%{
         transform: translateX(-100px);
