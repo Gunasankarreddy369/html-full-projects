@@ -4,12 +4,11 @@
     box-sizing: border-box;
 
 }body{
-    background-image: linear-gradient(white,lightgrey);
-    opacity: 1.5;
-    z-index: -1;
-    background-repeat: no-repeat;
-     background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.295));
+    opacity: 1;
+   
+    
+    height: 100%;
     width:100%;
     
 }
@@ -19,7 +18,7 @@
     padding-top: 30px;
    
     
-    background-color: rgb(240, 240, 240);
+    background-color: black;
 }
 .btnresume{
     background: linear-gradient(45deg,orange,yellow,blue,violet);
@@ -28,15 +27,15 @@
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
-    height: 80px;
-    font-size: 20px;
+    height: 60px;
+    font-size: 15px;
     
     font-weight: bold ;
     
 }
 .btnresume a{
     text-decoration: none;
-    color: orange;
+    color: white;
 }
 .btnresume:hover{
    
@@ -72,7 +71,7 @@
     background-image: linear-gradient(to right,rgba(255, 140, 0, 0.888),rgba(119, 255, 0, 0.989),rgb(0, 255, 38));
     background-clip: text;
     color: transparent;
-    font-size: 40px;
+    font-size: 30px;
     
    
 
@@ -84,7 +83,7 @@
     justify-content: space-between;
     
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold ;
     margin-left: 200px;
     
@@ -112,7 +111,7 @@
 .educationheadings{
     border: 1px solid black;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px;
     border-radius: 10px;
 }
@@ -131,7 +130,7 @@
 
 .less{
     color: blue;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold ;
     padding-right: 20px;
 }
@@ -210,7 +209,7 @@ img{
 }
 .namehead{
   
-   font-size: 35px;
+   font-size: 30px;
    padding-top:30px ;
    padding-bottom: 30px;
 }
@@ -264,7 +263,7 @@ img{
     padding: 30px;
     border: 2px solid black;
     gap: 20px;
-    height: 110vh;
+    height: 100vh;
     border-radius: 20px;
     margin: 20px 160px 30px 200px;
     background: linear-gradient(gray);
@@ -275,7 +274,7 @@ img{
 .experienceheading{
     display: flex;
     flex-direction: column;
-    
+    height: 100%;
     border-radius: 20px;
     border: 2px solid black;
     background-color: aliceblue;
@@ -308,17 +307,24 @@ img{
     color: blue;
 }
 .experienceheading p{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-left: 20px;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold ;
+}
+.experienceheading li{
+    text-align: justify;
+    font-size: 15px;
+    color: black;
+    
 }
 .heading-Education{
     display: flex;
     
     justify-content: space-around;
     padding: 30px;
+    
     margin: 20px 160px 30px 160px;
     border: 2px solid black;
     gap: 10px;
@@ -355,7 +361,7 @@ img{
     color: white;
     font-size: 30px;
 }
-.line2,.line3:hover{
+.line2:hover,.line3:hover{
     transform: scale(1.2);
    
 }
@@ -411,6 +417,9 @@ img{
    
     
 }
+.navul {
+    transition: transform 0.3s ease;
+}
 .heading-Certificates{
     display: flex;
     justify-content: center;
@@ -442,7 +451,7 @@ img{
 
 @keyframes fromLeft {
     0%{
-        transform: translateX(-100px);
+        transform: translateX(-60px);
     }
     100%{
         transform: translateX(0px);
@@ -453,7 +462,7 @@ img{
         background-position: 0% 50%;
     }
     50%{
-        background-position: 100% 50%;
+        background-position: 80% 50%;
     }
     100%{
         background-position: 0% 50%;
