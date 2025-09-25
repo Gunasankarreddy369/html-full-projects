@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#buttonclass{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: blue;
+    display: flex;
+}
+#displayy{
+     
+     display: none;
+     padding-top: 30px;
+}
+body{
+    background-image: url('');
+}
